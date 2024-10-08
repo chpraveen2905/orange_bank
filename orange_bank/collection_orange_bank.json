@@ -1,0 +1,736 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "orange_bank",
+    "collectionId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+    "dateExported": "2024-10-08T00:55:56.365Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "6f77ce78-fa99-421d-9277-cc4c23e4dada",
+            "name": "User API's",
+            "containerId": "",
+            "created": "2024-10-03T16:50:16.581Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6a7c939e-0cbc-4b5d-af97-91e216ec77e4",
+            "name": "Bank API's",
+            "containerId": "",
+            "created": "2024-10-03T16:50:27.679Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "6bd5fb99-d628-4106-b1f1-936121c84a83",
+            "name": "Account API's",
+            "containerId": "",
+            "created": "2024-10-03T16:50:57.313Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "591167f1-9a78-4103-8365-d9c037902ea1",
+            "name": "Transaction API's",
+            "containerId": "",
+            "created": "2024-10-03T16:51:06.767Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Work Flow - Regression",
+            "containerId": "",
+            "created": "2024-10-03T16:51:23.933Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "80c4b0b2-b534-4b5d-bcc8-bac6c6b5566f",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Register Admin",
+            "url": "http://localhost:8080/api/user/admin/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-03T16:12:09.519Z",
+            "modified": "2024-10-07T23:29:54.559Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"raju@orange.com\",\n  \"password\":\"raju\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "98665771-dad2-432d-ae04-52ddd3a9550a",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "6f77ce78-fa99-421d-9277-cc4c23e4dada",
+            "name": "Register Admin",
+            "url": "http://localhost:8080/api/user/admin/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-03T16:51:29.344Z",
+            "modified": "2024-10-03T17:12:44.733Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"admin@admin.com\",\n  \"password\":\"admin\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9e0586d5-73a6-4517-9116-bcf068f24066",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "6f77ce78-fa99-421d-9277-cc4c23e4dada",
+            "name": "Admin LOGIN",
+            "url": "http://localhost:8080/api/user/login",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-10-03T17:17:53.210Z",
+            "modified": "2024-10-03T17:23:37.465Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emailId\":\"admin@admin.com\",\n  \"password\":\"admin\",\n  \"role\":\"ADMIN\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4cc8304e-728f-467c-8d65-30030dfd2be8",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "6f77ce78-fa99-421d-9277-cc4c23e4dada",
+            "name": "Register Bank Manager",
+            "url": "http://localhost:8080/api/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-03T17:13:42.328Z",
+            "modified": "2024-10-03T19:27:13.105Z",
+            "headers": [
+                {
+                    "name": "Bearer",
+                    "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5Nzk1NTAsImV4cCI6MTcyNzk4MTM1MH0.U8152GLGWt0HJ-Kgaum0FrFFNMHf-l_33oBrlHqS22U",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"bankmanager2@orange.com\",\n  \"password\":\"bankmanager2\",\n  \"roles\":\"BANK\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5ODM1ODIsImV4cCI6MTcyNzk4NTM4Mn0.QOxBdBErvi7S8BeeoPZwaM36H-UIj7JdOzLrtw06xEI"
+            }
+        },
+        {
+            "_id": "a7306ab9-20fd-47fa-8aee-9d3decb70501",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Admin LOGIN",
+            "url": "http://localhost:8080/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-03T17:57:55.590Z",
+            "modified": "2024-10-07T23:30:24.188Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emailId\":\"raju@orange.com\",\n  \"password\":\"raju\",\n  \"role\":\"ADMIN\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fa094e27-740d-43b4-8996-2c2cbc9f9940",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Register Bank Manager",
+            "url": "http://localhost:8080/api/user/register",
+            "method": "POST",
+            "sortNum": 22500,
+            "created": "2024-10-03T19:25:01.938Z",
+            "modified": "2024-10-07T23:41:10.551Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"joshwa@orange.com\",\n  \"password\":\"joshwa\",\n  \"roles\":\"BANK\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWp1QG9yYW5nZS5jb20iLCJpYXQiOjE3MjgzNDQ0MzksImV4cCI6MTcyODM0NjIzOX0.X7b302VjZ8uvthYWZ3rjzFX9jf58DBdX5YijHU7KgjI"
+            }
+        },
+        {
+            "_id": "745694c6-33aa-410d-be5e-8c5e040d24cb",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Register Bank",
+            "url": "http://localhost:8080/api/bank/register",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2024-10-03T20:31:20.086Z",
+            "modified": "2024-10-07T23:42:06.533Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"Orange Bank 3\",\n \"code\":\"Orange003\",\n \"address\":\"Malakpet, HYDERABAD\",\n \"phoneNumber\":\"987654321\",\n \"email\":\"orangebank3@orange.com\",\n \"website\":\"orangebank.com\",\n \"country\":\"INDIA\",\n \"currency\":\"Rupee\",\n \"userId\":\"11\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyYWp1QG9yYW5nZS5jb20iLCJpYXQiOjE3MjgzNDM4MjgsImV4cCI6MTcyODM0NTYyOH0.e98fjPrznZgijHVOjSI785shm6d4O3_9gzPRFZBQwto"
+            }
+        },
+        {
+            "_id": "bf8223b9-73a4-4616-b4d2-6ae16a50eb51",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "6f77ce78-fa99-421d-9277-cc4c23e4dada",
+            "name": "Register Customer",
+            "url": "http://localhost:8080/api/user/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-03T20:27:43.999Z",
+            "modified": "2024-10-03T20:30:33.052Z",
+            "headers": [
+                {
+                    "name": "Bearer",
+                    "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5Nzk1NTAsImV4cCI6MTcyNzk4MTM1MH0.U8152GLGWt0HJ-Kgaum0FrFFNMHf-l_33oBrlHqS22U",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"customer1@orange.com\",\n  \"password\":\"customer1\",\n  \"roles\":\"CUSTOMER\",\n  \"bankId\":2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5ODM1ODIsImV4cCI6MTcyNzk4NTM4Mn0.QOxBdBErvi7S8BeeoPZwaM36H-UIj7JdOzLrtw06xEI"
+            }
+        },
+        {
+            "_id": "85ac8942-cc8f-4ad2-a796-0dd0631c7dc0",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Bank Manager LOGIN",
+            "url": "http://localhost:8080/api/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-03T20:31:41.817Z",
+            "modified": "2024-10-07T23:53:06.300Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emailId\":\"joshwa@orange.com\",\n  \"password\":\"joshwa\",\n  \"role\":\"BANK\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "87a21fa0-8a88-4183-9426-fad102a3d64d",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Register Customer",
+            "url": "http://localhost:8080/api/user/register",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2024-10-03T21:44:10.536Z",
+            "modified": "2024-10-07T23:43:52.215Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"suresh\",\n \"email\":\"suresh@orange.com\",\n \"password\":\"suresh\",\n \"roles\":\"CUSTOMER\",\n \"gender\":\"MALE\",\n \"contact\":\"orangebank.com\",\n \"street\":\"LB Nagar\",\n \"city\":\"HYDERABAD\",\n \"pinCode\":\"599601\",\n \"bankId\":3\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huQG9yYW5nZS5jb20iLCJpYXQiOjE3MjgzNDQwNDUsImV4cCI6MTcyODM0NTg0NX0.uq5wv_8lfT--1yZYuX3Nd-p0DDq31yK2pOktHnAd1VE"
+            }
+        },
+        {
+            "_id": "2cc59bd4-46f7-46af-bf62-7894f1b032dc",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Customer LOGIN",
+            "url": "http://localhost:8080/api/user/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-10-05T16:41:49.194Z",
+            "modified": "2024-10-07T23:54:48.441Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emailId\":\"suresh@orange.com\",\n  \"password\":\"suresh\",\n  \"role\":\"CUSTOMER\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b2e40df2-795d-48f8-bf02-4522446ecbd7",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch All Admins",
+            "url": "http://localhost:8080/api/user/fetch/role?role=ADMIN",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-10-03T21:53:30.188Z",
+            "modified": "2024-10-03T21:57:12.413Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "role",
+                    "value": "ADMIN",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"Customer1\",\n \"email\":\"Customer1@orange.com\",\n \"password\":\"Customer1\",\n \"roles\":\"CUSTOMER\",\n \"gender\":\"MALE\",\n \"contact\":\"orangebank.com\",\n \"street\":\"NIZAMPET\",\n \"city\":\"HYDERABAD\",\n \"pinCode\":\"599601\",\n \"bankId\":1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "f627f2d1-ae61-4df2-a7db-570643068525",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch Bank Managers",
+            "url": "http://localhost:8080/api/user/fetch/bank/managers",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-10-03T21:53:40.598Z",
+            "modified": "2024-10-03T21:56:55.212Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "fd73ef7e-a6a0-4dde-97c2-9d0fcab57e38",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch All Bank Managers",
+            "url": "http://localhost:8080/api/user/fetch/role?role=BANK",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-10-03T21:57:21.422Z",
+            "modified": "2024-10-03T21:58:17.102Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "role",
+                    "value": "BANK",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"Customer1\",\n \"email\":\"Customer1@orange.com\",\n \"password\":\"Customer1\",\n \"roles\":\"CUSTOMER\",\n \"gender\":\"MALE\",\n \"contact\":\"orangebank.com\",\n \"street\":\"NIZAMPET\",\n \"city\":\"HYDERABAD\",\n \"pinCode\":\"599601\",\n \"bankId\":1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "6eb8fa54-9701-4a78-a020-d9dcfeddcda1",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch All CUSTOMERS",
+            "url": "http://localhost:8080/api/user/fetch/role?role=CUSTOMER",
+            "method": "GET",
+            "sortNum": 65000,
+            "created": "2024-10-03T21:57:42.338Z",
+            "modified": "2024-10-03T22:48:32.860Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "role",
+                    "value": "CUSTOMER",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\":\"Customer1\",\n \"email\":\"Customer1@orange.com\",\n \"password\":\"Customer1\",\n \"roles\":\"CUSTOMER\",\n \"gender\":\"MALE\",\n \"contact\":\"orangebank.com\",\n \"street\":\"NIZAMPET\",\n \"city\":\"HYDERABAD\",\n \"pinCode\":\"599601\",\n \"bankId\":1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5OTU2MjYsImV4cCI6MTcyNzk5NzQyNn0.Y9JoKu1ENv4EbWZ0GuAkiJcG5_QcHzm55wfLeXzu6-0"
+            }
+        },
+        {
+            "_id": "487cbbf5-1c5f-4892-ae4c-09f9ae8ec099",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Update Status",
+            "url": "http://localhost:8080/api/user/update/status",
+            "method": "POST",
+            "sortNum": 65000,
+            "created": "2024-10-03T22:00:16.769Z",
+            "modified": "2024-10-03T22:06:09.867Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":6,\n  \"status\":\"ACTIVE\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "d31ed5fe-5487-4e24-aba9-ef50575d178e",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch Customer By Bank Id",
+            "url": "http://localhost:8080/api/user/bank/customers?bankId=1&customerName=Customer1",
+            "method": "GET",
+            "sortNum": 75000,
+            "created": "2024-10-03T22:06:43.907Z",
+            "modified": "2024-10-03T22:10:01.730Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bankId",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "customerName",
+                    "value": "Customer1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "549fddbe-2446-4998-8fca-d98bb9b38de1",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch Customer By Bank Id and Customer Name",
+            "url": "http://localhost:8080/api/user/bank/customer/search",
+            "method": "GET",
+            "sortNum": 85000,
+            "created": "2024-10-03T22:08:04.191Z",
+            "modified": "2024-10-03T22:09:10.222Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "0cfa32fa-6cd1-48b9-95cb-270f669dec3a",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Search Customer",
+            "url": "http://localhost:8080/api/user/all/customer/search?customerName=Customer1",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2024-10-03T22:10:30.236Z",
+            "modified": "2024-10-03T22:11:05.997Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "customerName",
+                    "value": "Customer1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyNzk5MjI2OCwiZXhwIjoxNzI3OTk0MDY4fQ.ZPEQjo7jQfG_4k23WgPS1_IOXEnYcTc0yB_EO_fQEEg"
+            }
+        },
+        {
+            "_id": "ee704953-77a1-495b-810d-a52a6ba0c299",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch All Banks",
+            "url": "http://localhost:8080/api/bank/fetch/all",
+            "method": "GET",
+            "sortNum": 105000,
+            "created": "2024-10-03T22:39:03.891Z",
+            "modified": "2024-10-03T22:47:26.103Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5OTU2MjYsImV4cCI6MTcyNzk5NzQyNn0.Y9JoKu1ENv4EbWZ0GuAkiJcG5_QcHzm55wfLeXzu6-0"
+            }
+        },
+        {
+            "_id": "c6974c27-abe2-4f9d-a0a4-3ed65da45aee",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch Bank By Bank Id",
+            "url": "http://localhost:8080/api/bank/fetch/id?bankId=1",
+            "method": "GET",
+            "sortNum": 115000,
+            "created": "2024-10-03T22:40:24.411Z",
+            "modified": "2024-10-03T22:47:47.652Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bankId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5OTU2MjYsImV4cCI6MTcyNzk5NzQyNn0.Y9JoKu1ENv4EbWZ0GuAkiJcG5_QcHzm55wfLeXzu6-0"
+            }
+        },
+        {
+            "_id": "357c8557-568e-4f17-94ec-531773e638e3",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch Bank By User Id",
+            "url": "http://localhost:8080/api/bank/fetch/user?userId=2",
+            "method": "GET",
+            "sortNum": 125000,
+            "created": "2024-10-03T22:40:28.101Z",
+            "modified": "2024-10-03T22:52:23.716Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3Mjc5OTU2MjYsImV4cCI6MTcyNzk5NzQyNn0.Y9JoKu1ENv4EbWZ0GuAkiJcG5_QcHzm55wfLeXzu6-0"
+            }
+        },
+        {
+            "_id": "85cbc767-eb10-49df-8501-defee6e02527",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Add Account",
+            "url": "http://localhost:8080/api/bank/account/add",
+            "method": "POST",
+            "sortNum": 135000,
+            "created": "2024-10-04T00:29:54.197Z",
+            "modified": "2024-10-07T23:48:06.056Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"number\":\"orange010\",\n  \"ifscCode\": \"orangeHYD\",\n  \"type\":\"SAVINGS\",\n  \"bankId\":\"3\",\n  \"userId\":\"12\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huQG9yYW5nZS5jb20iLCJpYXQiOjE3MjgzNDQ2OTMsImV4cCI6MTcyODM0NjQ5M30.6_TypeITeX2GFgayepi8SETDSMQ1AyASGuL6BRzVtfo"
+            }
+        },
+        {
+            "_id": "a1257f6a-db5f-44ec-85e2-fb78324e58ed",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch All Accounts",
+            "url": "http://localhost:8080/api/bank/account/fetch/all",
+            "method": "GET",
+            "sortNum": 145000,
+            "created": "2024-10-04T17:16:58.369Z",
+            "modified": "2024-10-04T17:19:01.843Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MjgwNjIzMjMsImV4cCI6MTcyODA2NDEyM30.JELHjm7YjWq3AW5L7vbJcp5ccSF6LTpvNrwjQ3qKp9s"
+            }
+        },
+        {
+            "_id": "56db226f-b553-4479-ba7c-2837e6286eae",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "FetchAccount by Bank Id",
+            "url": "http://localhost:8080/api/bank/account/fetch/bankwise?bankId=1",
+            "method": "GET",
+            "sortNum": 155000,
+            "created": "2024-10-04T17:20:43.702Z",
+            "modified": "2024-10-04T17:23:17.428Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bankId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyODA2MjU4MCwiZXhwIjoxNzI4MDY0MzgwfQ.GY7dyYNEZ7gKLkAtizpWMTq_kigt77UENbPz5VMYP5Y"
+            }
+        },
+        {
+            "_id": "d3773f16-4121-4bb5-a826-7f60467a4a95",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "FetchAccount by Account Id",
+            "url": "http://localhost:8080/api/bank/account/fetch/id?accountId=1",
+            "method": "GET",
+            "sortNum": 165000,
+            "created": "2024-10-04T17:23:37.444Z",
+            "modified": "2024-10-04T17:24:41.799Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "accountId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyODA2MjU4MCwiZXhwIjoxNzI4MDY0MzgwfQ.GY7dyYNEZ7gKLkAtizpWMTq_kigt77UENbPz5VMYP5Y"
+            }
+        },
+        {
+            "_id": "bb037f29-d26d-4a6d-880b-5cb518fe8c2a",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "FetchAccount by User Id",
+            "url": "http://localhost:8080/api/bank/account/fetch/user?userId=6",
+            "method": "GET",
+            "sortNum": 175000,
+            "created": "2024-10-04T17:24:55.478Z",
+            "modified": "2024-10-04T17:25:29.665Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "6",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyODA2MjU4MCwiZXhwIjoxNzI4MDY0MzgwfQ.GY7dyYNEZ7gKLkAtizpWMTq_kigt77UENbPz5VMYP5Y"
+            }
+        },
+        {
+            "_id": "beab61e5-7d5c-46b7-a8a1-f7a18f8c5795",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Search Accounts",
+            "url": "http://localhost:8080/api/bank/account/search?bankId=1&accountNumber=1",
+            "method": "GET",
+            "sortNum": 185000,
+            "created": "2024-10-04T17:26:00.029Z",
+            "modified": "2024-10-04T17:31:20.886Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bankId",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "accountNumber",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyODA2MzAwMSwiZXhwIjoxNzI4MDY0ODAxfQ.0h7tCA8qR08p_vnKWHHYUa_vrPX37C25b8q6NaGYhjQ"
+            }
+        },
+        {
+            "_id": "33af6f69-ad0a-4654-b978-e8c8d6a6a2d4",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Add Deposit Transaction ",
+            "url": "http://localhost:8080/api/bank/transaction/deposit",
+            "method": "POST",
+            "sortNum": 195000,
+            "created": "2024-10-04T21:18:52.081Z",
+            "modified": "2024-10-07T23:54:05.646Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":12,\n  \"bankId\":3,\n  \"amount\":900,\n  \"sourceBankAccountId\":3\n  \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb3Nod2FAb3JhbmdlLmNvbSIsImlhdCI6MTcyODM0NTE4NiwiZXhwIjoxNzI4MzQ2OTg2fQ.GXtaVoIK3X18V9yPglGwCXzfykZ8atLgzjzBAQAFoUg"
+            }
+        },
+        {
+            "_id": "5776b847-9ab9-4240-8503-130aa7ee809b",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Withdraw Transaction",
+            "url": "http://localhost:8080/api/bank/transaction/withdraw",
+            "method": "POST",
+            "sortNum": 205000,
+            "created": "2024-10-05T15:18:25.955Z",
+            "modified": "2024-10-05T15:23:27.114Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":6,\n  \"bankId\":1,\n  \"amount\":5,\n  \"sourceBankAccountId\":1\n  \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYW5rbWFuYWdlcjFAb3JhbmdlLmNvbSIsImlhdCI6MTcyODE0MTc0MiwiZXhwIjoxNzI4MTQzNTQyfQ.lCOAzRjZS7OVFboU24xe0juUb48JwJcRs3EZTYgMROg"
+            }
+        },
+        {
+            "_id": "206f3c97-5d99-4401-bda9-2ed4ee9f64d2",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Account Transfer",
+            "url": "http://localhost:8080/api/bank/transaction/account/transfer",
+            "method": "POST",
+            "sortNum": 215000,
+            "created": "2024-10-05T16:31:11.569Z",
+            "modified": "2024-10-08T00:22:36.466Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\":12,\n  \"bankId\":3,\n  \"amount\":150,\n  \"sourceBankAccountId\":3,\n \"transactionType\":\"Account Transfer\",\n  \"toBankAccount\":\"orange006\",\n  \"toBankIfsc\":\"orangeHYD\",\n  \"accountTransferPurpose\":\"GIFT\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXJlc2hAb3JhbmdlLmNvbSIsImlhdCI6MTcyODM0NTQ2NSwiZXhwIjoxNzI4MzQ3MjY1fQ.UnvolDeqlfdwO3xtV2xelcg_1TdvdkAO89VIoYtUU5I"
+            }
+        },
+        {
+            "_id": "9d98b77b-c7d5-48d5-b057-f53882c6b723",
+            "colId": "3b2bbb51-a87e-40ba-a33c-0fcf65f2ac9a",
+            "containerId": "e62f969c-55a9-4cd4-8bf6-084d67868277",
+            "name": "Fetch History",
+            "url": "http://localhost:8080/api/bank/transaction/history?userId=10",
+            "method": "GET",
+            "sortNum": 225000,
+            "created": "2024-10-08T00:23:58.641Z",
+            "modified": "2024-10-08T00:36:37.236Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "userId",
+                    "value": "10",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdXJlc2hAb3JhbmdlLmNvbSIsImlhdCI6MTcyODM0Nzc4NiwiZXhwIjoxNzI4MzQ5NTg2fQ.XylNW7zUSXJwRvmzjfu5prFe5XqH8ota3uZgh351UTw"
+            }
+        }
+    ],
+    "ref": "txIRaAGlkqrRGZIzWJ1luUSBYOEFQMtEqjLeeTSVagJqjEtT7r1cC2WSmWcxrwnaLjSm-wn9k03sHmyMdev_RQ"
+}
